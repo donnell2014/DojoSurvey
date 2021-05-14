@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+<body>
+    <div id= 'box'>
+            <form class= 'top' action='/result' method='post'>
+                <h1>Your Name: <input type='text' name='name'></h1>
+                <h1>Dojo Location:<select name='dojo'>
+                    <option value='San Jose'>San Jose</option>
+                </select>
+                </h1>
+                <h1>Favorite Food:<select name='food'>
+                    <option value='Pizza'>Pizza</option>
+                </select>
+                </h1>
+                <h1>Comment:</h1>
+                <textarea type='text' name='comment'></textarea>
+                <input type='submit' value='create user'>
+            </form>
+    </div>
+
+</body>
+</html>

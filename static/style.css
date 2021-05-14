@@ -1,0 +1,17 @@
+#box{
+    margin:auto;
+    height: 500px;
+    width: 700px;
+    /* background-color: blue; */
+    border: solid black 5px;
+
+}
+.top{
+    margin: auto;
+    width:100%;
+    padding-left: 50px;
+}
+.inner{
+    margin: auto;
+    width:100%
+}
